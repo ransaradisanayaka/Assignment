@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case 1</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      .box {
+        position: absolute;
+        width: 50vw;
+        height: 50vh;
+      }
+
+      #box1 {
+        background-color: #ff0101;
+        top: 0;
+        left: 0;
+      }
+
+      #box2 {
+        background-color: #008001;
+        top: 0;
+        right: 0;
+      }
+
+      #box3 {
+        background-color: #ffa802;
+        bottom: 0;
+        left: 0;
+      }
+
+      #box4 {
+        background-color: #ff1593;
+        bottom: 0;
+        right: 0;
+      }
+
+      .corner-circles {
+        background-color: white;
+        width: 12vh;
+        height: 25%;
+        position: absolute;
+      }
+
+      #top-left-circle {
+        border-bottom-right-radius: 100%;
+      }
+
+      #top-right-circle {
+        border-bottom-left-radius: 100%;
+        top: 0;
+        right: 0;
+      }
+
+      #bottom-left-circle {
+        border-top-right-radius: 100%;
+        bottom: 0;
+        left: 0;
+      }
+
+      #bottom-right-circle {
+        border-top-left-radius: 100%;
+        bottom: 0;
+        right: 0;
+      }
+
+      .middle-circles {
+        background-color: white;
+        width: 10vh;
+        height: 20%;
+        position: absolute;
+      }
+
+      #middle-top-left-circle {
+        border-bottom-left-radius: 100%;
+        top: 0;
+        right: 0;
+      }
+
+      #middle-top-right-circle {
+        border-bottom-right-radius: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      #middle-bottom-left-circle {
+        border-top-left-radius: 100%;
+        bottom: 0;
+        right: 0;
+      }
+
+      #middle-bottom-right-circle {
+        border-top-right-radius: 100%;
+        bottom: 0;
+        left: 0;
+      }
+
+      .center-box,
+      .center-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .center-box {
+        background-color: white;
+        width: 20vh;
+        height: 20vh;
+      }
+
+      .center-circle {
+        background-color: #ff0101;
+        width: 12vh;
+        height: 12vh;
+        border-radius: 100%;
+      }
+
+      .box-center {
+        background-color: #ff0101;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #box1-center-circle,
+      #box2-center-circle,
+      #box3-center-circle,
+      #box4-center-circle {
+        background-color: white;
+        width: 25vh;
+        height: 25vh;
+        border-radius: 100%;
+      }
+
+      #box1-center-box,
+      #box2-center-box,
+      #box3-center-box,
+      #box4-center-box {
+        width: 10vh;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="box1">
+      <div class="corner-circles" id="top-left-circle"></div>
+      <div class="middle-circles" id="middle-top-left-circle"></div>
+      <div class="box-center" id="box1-center-circle"></div>
+      <div class="box-center" id="box1-center-box"></div>
+    </div>
+
+    <div class="box" id="box2">
+      <div class="corner-circles" id="top-right-circle"></div>
+      <div class="middle-circles" id="middle-top-right-circle"></div>
+      <div class="box-center" id="box2-center-circle"></div>
+      <div class="box-center" id="box2-center-box"></div>
+    </div>
+
+    <div class="box" id="box3">
+      <div class="corner-circles" id="bottom-left-circle"></div>
+      <div class="middle-circles" id="middle-bottom-left-circle"></div>
+      <div class="box-center" id="box3-center-circle"></div>
+      <div class="box-center" id="box3-center-box"></div>
+    </div>
+
+    <div class="box" id="box4">
+      <div class="corner-circles" id="bottom-right-circle"></div>
+      <div class="middle-circles" id="middle-bottom-right-circle"></div>
+      <div class="box-center" id="box4-center-circle"></div>
+      <div class="box-center" id="box4-center-box"></div>
+    </div>
+
+    <div class="center-box">
+      <div class="center-circle"></div>
+    </div>
+  </body>
+</html>
